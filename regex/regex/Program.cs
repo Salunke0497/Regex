@@ -16,6 +16,7 @@ namespace regex
             Console.WriteLine("-------------");
             Validation Code = new Validation();
             //UC1 first name
+
             //do
             //{
             //    Console.WriteLine("ENTER THE FIRST NAME");
@@ -24,6 +25,7 @@ namespace regex
             //} while (flag == true);
 
             ////UC2 LAST NAME
+            
             //do
             //{
             //    Console.WriteLine("ENTER THE LAST NAME");
@@ -32,14 +34,22 @@ namespace regex
             //} while (flag == true);
 
             //UC3 mail-id
+
+            //do
+            //{
+            //    Console.WriteLine("ENTER THE E-Mail");
+            //    Console.WriteLine("formate--abc.xyz@bl.co.in");
+            //    string input = Convert.ToString(Console.ReadLine());
+            //    flag = Code.mail(input);
+            //} while (flag == true);
+
+            //UC4 Mobile Number
             do
             {
-                Console.WriteLine("ENTER THE E-Mail");
-                Console.WriteLine("formate--abc.xyz@bl.co.in");
+                Console.WriteLine("ENTER THE Mobile Number");
                 string input = Convert.ToString(Console.ReadLine());
-                flag = Code.mail(input);
+                flag = Code.mobile(input);
             } while (flag == true);
-
             Console.ReadLine();
         }
     }
