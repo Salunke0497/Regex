@@ -9,13 +9,34 @@ namespace regex
 {
     internal class Validation
     {
-       const string PinCode = "^[0-9]{6}$";
-        public void Test(string input)
+       const string expression = "^[A-Z][a-zA-Z]{3,}$";
+        public bool FirstName(string input)
         {
-         if (Regex.IsMatch(input, PinCode))
-            Console.WriteLine("PinCode is correct");
-         else
-            Console.WriteLine("PinCode regex failed");
+            if (Regex.IsMatch(input, expression))
+            {
+                Console.WriteLine("FirstName is correct");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("FirstName regex failed");
+                return true;
+            }
         }
+        public bool LastName(string input)
+        {
+            if (Regex.IsMatch(input, expression))
+            {
+                Console.WriteLine("LastName is correct");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("LastName regex failed");
+                return true;
+            }
+        }
+
     }
 }
+
