@@ -25,7 +25,7 @@ namespace regex
             //} while (flag == true);
 
             ////UC2 LAST NAME
-            
+
             //do
             //{
             //    Console.WriteLine("ENTER THE LAST NAME");
@@ -44,11 +44,33 @@ namespace regex
             //} while (flag == true);
 
             //UC4 Mobile Number
+            //do
+            //{
+            //    Console.WriteLine("ENTER THE Mobile Number");
+            //    string input = Convert.ToString(Console.ReadLine());
+            //    flag = Code.mobile(input);
+            //} while (flag == true);
+
+            //UC5 PASSWORD LENGTH
+            //do
+            //{
+            //    Console.WriteLine("ENTER THE PASSWORD HERE");
+            //    string input = Convert.ToString(Console.ReadLine());
+            //    flag = Code.Password(input);
+            //} while (flag == true);
+
+            //UC6 atleast one upper case
+            //do
+            //{
+            //    Console.WriteLine("ENTER THE PASSWORD HERE");
+            //    string input = Convert.ToString(Console.ReadLine());
+            //    flag = Code.PasswordUpper(input);
+            //} while (flag == true);
             do
             {
-                Console.WriteLine("ENTER THE Mobile Number");
+                Console.WriteLine("ENTER THE PASSWORD HERE");
                 string input = Convert.ToString(Console.ReadLine());
-                flag = Code.mobile(input);
+                flag = Code.Passwordnumeric(input);
             } while (flag == true);
             Console.ReadLine();
         }
