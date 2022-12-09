@@ -14,7 +14,7 @@ namespace regex
             Console.WriteLine("-------------");
             Validation Code = new Validation();
 
-            string input = "A40220";
+            string input = "priyanka";
             Code.Test(input);
 
             Console.ReadLine();
