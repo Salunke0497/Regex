@@ -52,12 +52,12 @@ namespace regex
             //} while (flag == true);
 
             //UC5 PASSWORD LENGTH
-            //do
-            //{
-            //    Console.WriteLine("ENTER THE PASSWORD HERE");
-            //    string input = Convert.ToString(Console.ReadLine());
-            //    flag = Code.Password(input);
-            //} while (flag == true);
+            do
+            {
+                Console.WriteLine("ENTER THE PASSWORD HERE");
+                string input = Convert.ToString(Console.ReadLine());
+                flag = Code.Password(input);
+            } while (flag == true);
 
             //UC6 atleast one upper case
             //do
@@ -66,13 +66,24 @@ namespace regex
             //    string input = Convert.ToString(Console.ReadLine());
             //    flag = Code.PasswordUpper(input);
             //} while (flag == true);
-            do
-            {
-                Console.WriteLine("ENTER THE PASSWORD HERE");
-                string input = Convert.ToString(Console.ReadLine());
-                flag = Code.Passwordnumeric(input);
-            } while (flag == true);
-            Console.ReadLine();
+
+            //UC7 numeric
+            //do
+            //{
+            //    Console.WriteLine("ENTER THE PASSWORD HERE");
+            //    string input = Convert.ToString(Console.ReadLine());
+            //    flag = Code.Passwordnumeric(input);
+            //} while (flag == true);
+            //Console.ReadLine();
+
+            //UC8 special character
+            //do
+            //{
+            //    Console.WriteLine("ENTER THE PASSWORD HERE");
+            //    string input = Convert.ToString(Console.ReadLine());
+            //    flag = Code.Passwordchar(input);
+            //} while (flag == true);
+            //Console.ReadLine();
         }
     }
 }
