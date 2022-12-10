@@ -21,7 +21,7 @@ namespace regex
         const string expression3 = "^[0-9]{2}[ ][0-9]{10}$";
 
         // This expression for password UC5 PASSWORD LENGTH
-        const string expression4= "^[A-Za-z0-9][!@#$%^&*][a-zA-Z0-9]{8}$"; // e.g-Amol@123
+        const string expression4 = "^[A-Za-z0-9][!@#$%^&*][a-zA-Z0-9]{8}$"; // e.g-Amol@123
 
         // this expression for UC6 at least-1 Upper Case
         const string expression5 = "^([A-Z]{1})+[!@#$%^&*a-zA-Z0-9]{7}$"; //exp-A@abc112
@@ -30,7 +30,7 @@ namespace regex
         const string expression6 = "^([0-9]{1})+[A-Za-z!@#$%^&*]{7}$"; //exp-4Amol@*
 
         //this expression for UC8Has exactly-1 Special Character
-        const string expression7 = "^[A-Za-z0-9]{1,4}[!@#$%^&*]{1}[a-zA-Z0-9]{1,3}$";
+        const string expression7 = "^[A-Za-z0-9]{1,4}[!@#$%^&*]{1}[a-zA-Z0-9]{1,3}$"; //exp-Amol@123
         public bool FirstName(string input)
         {
             if (Regex.IsMatch(input, expression))
@@ -136,6 +136,6 @@ namespace regex
                 return true;
             }
         }
-
+    }
 }
 
